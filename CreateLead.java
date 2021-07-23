@@ -72,28 +72,20 @@ public class CreateLead {
 		  {
 			  driver.findElementById("updateContactForm_description").clear();
 			  driver.findElementById("updateContactForm_importantNote").sendKeys("ASADASDASDa Description text sample, Description text sample ,Description text sample ,Description text sample Description text sampleDescription text sample,Description text sample,Description text sample,Description text sample");
-
 			  driver.findElementByXPath("//input[@value='Update']").click();
 			  System.out.println("done with editing");
-			  
+			 
 			  driver.close(); 
 			  
 		  }
-		  
 		  else
 			  System.out.println("Failed during Editing");
-		 
 	   }
 	   else 
 	   {
 		   System.out.println("Not redirected to Edit page yet - so exiting ");
 		   driver.close();
 	   }
-	
-	   
-	   
-
-	    
 	}
 
 }
